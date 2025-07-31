@@ -59,3 +59,5 @@ O projeto já funciona bem, mas há planos para aprimoramentos, como:
 3. **Sistema de hierarquia de acesso:** Criar diferentes níveis de permissão (administrador, usuário, convidado) para controlar o acesso a certas funcionalidades da aplicação.
 
 4. **Deleção de cadastro:** Criar metodo de exclusão do cadastros existentes.
+
+Data 31/07/2025
