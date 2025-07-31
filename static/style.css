@@ -1,0 +1,16 @@
+.box-form{
+    width: 22rem;
+    padding: 1rem;
+    background-color:rgba(201, 249, 209, 0.842) ;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+}
+div i{
+  
+    color: gray;
+}
+body{
+    background-color: #E4FDC6;
+    
+}
