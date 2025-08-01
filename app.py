@@ -102,10 +102,10 @@ def index():
                 login_user(usuario_cadastrado)
                 return redirect(url_for("home"))
             else:
-                flash(f"Senha incorreta! Tente novamente.", "danger")
+                flash(f"Usuário ou senha inválidos", "danger")
                 return redirect(url_for("index"))
         else:
-            flash(f"Usuário não está cadastrado! Cadastre-se para efetuar o login", "warning")
+            flash(f"Usuário ou senha inválidos", "danger")
             return redirect(url_for("index"))
     return render_template("index.html")
 
@@ -205,7 +205,7 @@ def cadastro():
         
         #Verifica se o nome cadastrado já se encontra no banco de dados, se já constar retornará um aviso ao usuário
         if cadastro_existente:
-            flash(f"Usuário ou senha inválidos", "warning")
+            flash(f"Nome de usuário já existe! Por favor, utilize outro nome de usuário.", "warning")
             return redirect(url_for("cadastro"))
         else:
         #Conversão da senha em hash pelo bcrypt
