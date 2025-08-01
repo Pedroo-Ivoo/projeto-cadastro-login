@@ -205,7 +205,7 @@ def cadastro():
         
         #Verifica se o nome cadastrado já se encontra no banco de dados, se já constar retornará um aviso ao usuário
         if cadastro_existente:
-            flash(f"Nome de usuário já existe! Por favor, utilize outro nome de usuário.", "warning")
+            flash(f"Usuário ou senha inválidos", "warning")
             return redirect(url_for("cadastro"))
         else:
         #Conversão da senha em hash pelo bcrypt
